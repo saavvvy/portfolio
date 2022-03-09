@@ -54,6 +54,8 @@
           }
 
           .web-btn-container {
+            margin-bottom: 1rem;
+
             .web-link {
               color: $black;
               font-size: 0.9rem;
@@ -76,7 +78,6 @@
                   display: inline-block;
                   transform: translateY(-4px);
                   margin-left: 8px;
-                  /* transition: width cubic-bezier(0.4, 0, 0.2, 1) 0.3s; */
                 }
               }
 
@@ -96,7 +97,6 @@
                   display: inline-block;
                   transform: translateY(-4px);
                   margin-left: 8px;
-                  /* transition: width cubic-bezier(0.4, 0, 0.2, 1) 0.3s; */
                 }
               }
 
