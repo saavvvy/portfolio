@@ -1,0 +1,118 @@
+#web {
+  .web-wrap {
+    margin-top: 4.5rem;
+
+    .web-list {
+      margin-bottom: 70px;
+
+      .web-content-wrap {
+        display: block;
+        width: 100%;
+
+        .web-media {
+          .web-img {
+            position: relative;
+
+            .web-thumbnail {
+              display: block;
+              height: 100%;
+              position: relative;
+              height: 20rem;
+              display: block;
+              border: 1rem solid $neutral;
+              overflow: hidden;
+              @include transition1;
+
+              img {
+                transform: 0;
+                transition: all 10s ease;
+
+                &:hover {
+                  transform: translateY(
+                    calc(-100% + 18rem)
+                  ); // the reason for this little calc here is because of the padding added to the image height using the border property, 1rem at the top and 1rem at the bottom
+                }
+              }
+            }
+          }
+        }
+
+        .web-content {
+          margin-top: 2rem;
+          padding-right: 3.2rem;
+
+          h3 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            line-height: 21px;
+            font-size: 0.85rem;
+            margin-bottom: 1.6rem;
+          }
+
+          .web-btn-container {
+            .web-link {
+              color: $black;
+              font-size: 0.9rem;
+              font-weight: 700;
+              position: relative;
+              display: block;
+              overflow: hidden;
+
+              .web-link1 {
+                display: block;
+                transform: translateY(0);
+                @include transition2;
+                opacity: 1;
+
+                &::after {
+                  content: "";
+                  width: 18px;
+                  height: 1.5px;
+                  background: $primary;
+                  display: inline-block;
+                  transform: translateY(-4px);
+                  margin-left: 8px;
+                  /* transition: width cubic-bezier(0.4, 0, 0.2, 1) 0.3s; */
+                }
+              }
+
+              .web-link2 {
+                position: absolute;
+                bottom: -100%;
+                left: 0;
+                right: 0;
+                @include transition2;
+                opacity: 0;
+
+                &::after {
+                  content: "";
+                  width: 18px;
+                  height: 1.5px;
+                  background: $primary;
+                  display: inline-block;
+                  transform: translateY(-4px);
+                  margin-left: 8px;
+                  /* transition: width cubic-bezier(0.4, 0, 0.2, 1) 0.3s; */
+                }
+              }
+
+              &:hover .web-link1 {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+
+              &:hover .web-link2 {
+                bottom: 0;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

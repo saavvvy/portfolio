@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+
+$font-1: "Poppins", sans-serif;
+$font-2: "Iceberg", cursive;
+
+$primary: #f17300;
+$secondary: #0f0f0f;
+$neutral: #dbdbdb;
+$white: #fff;
+$black: #000;
+
+[data-theme="dark"] {
+  $primary: #f17300;
+  $secondary: #0f0f0f;
+  $neutral: #dbdbdb;
+  $white: #fff;
+  $black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 4rem 0 0 0;
+  background: $white;
+  color: $black;
+  font-size: 0.938rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $secondary;
+  font-weight: 700;
+  font-family: $font-2;
+}
+
+p,
+a,
+button {
+  font-family: $font-1;
+}
+
+@mixin transition1 {
+  transition: all 0.4s ease-in-out;
+}
+
+@mixin transition2 {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+button {
+  background: $secondary;
+  color: $white;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  @include transition1;
+  margin: 1.5rem 1rem 0 0;
+  font-size: 1rem;
+
+  &:hover {
+    border-color: $secondary;
+    background: $white;
+    color: $secondary;
+  }
+
+  &.primary {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+      border-color: $primary;
+      background: $white;
+      color: $primary;
+    }
+  }
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+// START RESPONSIVE MIXIN
+
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+// END RESPONSIVE MIXIN

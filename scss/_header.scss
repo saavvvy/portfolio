@@ -1,0 +1,325 @@
+// START OVERLAY
+
+.overlay {
+  background: $black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 999;
+  @include transition1;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+// END OVERLAY
+
+// START HEADER
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  z-index: 999;
+  background: transparent;
+
+  .nav {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-menu {
+      position: relative;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 7rem 0 0 3rem;
+      background: $secondary;
+      color: $white;
+      opacity: 0;
+      z-index: 9999;
+      transform: translateX(-100%);
+
+      .nav-list {
+        margin-top: -2rem;
+        .nav-item {
+          position: relative;
+          display: block;
+
+          .nav-link {
+            color: $white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 70px;
+            text-transform: uppercase;
+            font-family: $font-2;
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            .nav-link1 {
+              display: block;
+              transform: translateY(0);
+              @include transition2;
+              opacity: 1;
+            }
+
+            .nav-link2 {
+              position: absolute;
+              bottom: -100%;
+              left: 0;
+              right: 0;
+              @include transition2;
+              opacity: 0;
+            }
+          }
+
+          // below codes define the nav-link hover effect
+          // the above transition effect is important
+          &:hover .nav-link1 {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          &:hover .nav-link2 {
+            bottom: 0;
+            opacity: 1;
+          }
+        }
+      }
+
+      .social-links {
+        margin-top: 1.5rem;
+
+        .social-link {
+          margin: 0 20px 0 0;
+          display: inline-block;
+          position: relative;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: $primary;
+            position: absolute;
+            top: 10px;
+            right: -14px;
+          }
+
+          &:nth-of-type(4)::after {
+            display: none;
+          }
+
+          a {
+            font-family: $font-2;
+            font-size: 1rem;
+            height: 24px;
+            font-weight: 400;
+            color: $neutral;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+
+            span {
+              display: block;
+              transform: translateY(0);
+              @include transition2;
+              opacity: 1;
+            }
+
+            i {
+              position: absolute;
+              bottom: -100%;
+              left: 0;
+              right: 0;
+              text-align: center;
+              font-size: 1rem;
+              color: $primary;
+              @include transition2;
+              opacity: 0;
+            }
+          }
+
+          a:hover span {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          a:hover i {
+            bottom: 0px;
+            opacity: 1;
+          }
+        }
+      }
+
+      .email {
+        margin-top: 1rem;
+        position: relative;
+        display: inline-flex;
+
+        a {
+          font-family: $font-2;
+          font-size: 1.15rem;
+          color: $white;
+          font-weight: 500;
+          display: inline-flex;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          background: #414141;
+          width: 100%;
+          height: 2px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          background: $primary;
+          width: 0;
+          height: 5px;
+          @include transition2;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      .nav-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        width: 45px;
+        height: 45px;
+        background: $white;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition1;
+
+        &:hover {
+          background: $primary;
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .logo {
+      width: 150px;
+      @include transition1;
+      color: $black;
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-family: $font-2;
+    }
+
+    .toggle-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .theme-container {
+        margin-right: 1rem;
+        @include transition1;
+
+        .theme-switch-wrapper {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-right: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $black;
+            display: none;
+          }
+
+          .theme-switch {
+            // this defines the width and height of the toggle div
+            width: 40px;
+            height: 22px;
+            position: relative;
+            overflow: hidden;
+
+            input {
+              display: none;
+
+              // this defines the toggle change
+              &:checked + .slider {
+                background: $black;
+              }
+
+              &:checked + .slider::before {
+                background: $primary;
+                transform: translateX(16px);
+              }
+            }
+
+            .slider {
+              // this creates the actual toggle div
+              background: $black;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              top: 0;
+              cursor: pointer;
+              border-radius: 30px;
+
+              &::before {
+                // this defines the white circle inside the toggle div
+                content: "";
+                position: absolute;
+                background: $white;
+                bottom: 3px;
+                left: 4px;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                @include transition2;
+              }
+            }
+          }
+        }
+      }
+
+      .nav-open {
+        width: 45px;
+        height: 45px;
+        background: $black;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition1;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+.hide-logo {
+  opacity: 0;
+  pointer-events: none;
+}
+
+// END HEADER
