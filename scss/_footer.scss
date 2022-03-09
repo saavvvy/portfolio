@@ -1,0 +1,223 @@
+.footer {
+  background: var(--container-color);
+  margin-top: 2rem;
+  padding: 7rem 0;
+
+  .footer-container {
+    gap: 0;
+    position: relative;
+
+    .footer-right {
+      margin-top: 3rem;
+
+      &-contact-title {
+        margin-top: 3rem;
+      }
+
+      form {
+        margin-top: 3rem;
+
+        input,
+        textarea {
+          font-family: $font-1;
+          width: 100%;
+          max-width: 100%;
+          background: transparent;
+          border-bottom: 1px solid var(--text-color);
+          padding: 10px 0 2px 0;
+          margin-bottom: 1.5rem;
+          color: var(--dark-color);
+          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        .submit-btn {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .footer-left {
+      .footer-social-links {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+
+        .footer-social-link {
+          margin: 0 20px 0 0;
+          display: inline-block;
+          position: relative;
+
+          a {
+            font-size: 1rem;
+            height: 24px;
+            font-weight: 600;
+            color: var(--title-color);
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            a span {
+              // this is for clean effect
+              display: block;
+              transform: translateY(0);
+              @include transition2;
+              opacity: 1;
+            }
+
+            i {
+              position: absolute;
+              bottom: -100%;
+              left: 0;
+              right: 0;
+              text-align: center;
+              font-size: 1rem;
+              color: var(--orange-color);
+              @include transition2;
+              opacity: 0;
+            }
+          }
+
+          a:hover span {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          a:hover i {
+            bottom: 0;
+            opacity: 1;
+          }
+
+          &::after {
+            // for the dot
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: var(--orange-color);
+            position: absolute;
+            top: 10px;
+            right: -14px;
+          }
+
+          &:nth-of-type(4)::after {
+            display: none;
+          }
+        }
+      }
+
+      .footer-description {
+        color: var(--text-color);
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        max-width: 500px;
+      }
+
+      .footer-email {
+        margin-top: 2rem;
+        position: relative;
+        display: inline-flex;
+
+        a {
+          font-size: 1.15rem;
+          color: var(--dark-color);
+          font-weight: 700;
+          display: inline-flex;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          background: #414141;
+          width: 100%;
+          height: 2px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          background: var(--orange-color);
+          width: 0;
+          height: 5px;
+          @include transition2;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      .copyright {
+        display: block;
+        color: var(--dark-color);
+        margin-top: 3rem;
+        font-weight: 900;
+        font-size: 1.1rem;
+
+        span {
+          position: relative;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            background: #414141;
+            width: 100%;
+            height: 2px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            background: var(--orange-color);
+            width: 0;
+            height: 5px;
+            @include transition2;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SCROLL UP
+
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -20%;
+  display: flex;
+  background: var(--orange-color);
+  border-radius: 50%;
+  padding: 0.8rem;
+  opacity: 0.9;
+  z-index: 99;
+  transition: 0.4s;
+
+  &:hover {
+    background: var(--dark-color);
+    opacity: 1;
+  }
+
+  .scrollup-icon {
+    color: var(--white-color);
+    font-size: 1.25rem;
+  }
+}
+
+.show-scroll {
+  bottom: 5rem;
+}

@@ -55,24 +55,24 @@ tl.fromTo(
 
 navOpen.addEventListener("click", () => {
   tl.play();
-  // navOpen.style.opacity = 0;
+  navOpen.style.opacity = 0;
 });
 
 navClose.addEventListener("click", () => {
   tl.reverse();
-  //   navOpen.style.opacity = 1;
+    navOpen.style.opacity = 1;
 });
 
 overlay.addEventListener("click", () => {
   tl.reverse();
-  //   navOpen.style.opacity = 1;
+    navOpen.style.opacity = 1;
 });
 
 // the reason for this is so that when you click on any of the nav-links, the animations play and happen in effect before going to it's destination
 navLinks.forEach((e) => {
   e.addEventListener("click", () => {
     tl.reverse();
-    // navOpen.style.opacity = 1;
+    navOpen.style.opacity = 1;
   });
 });
 
@@ -96,49 +96,114 @@ window.addEventListener("scroll", hideLogo);
 
 // START HOVER EFFECT
 
-// new hoverEffect({
-//   parent: document.querySelector(".home-img"),
-//   intensity: 0.3,
-//   image1: "/images/hero.jpg",
-//   image2: "/images/hero-2.jpg",
-//   displacementImage: "/images/diss.png",
-//   imagesRatio: 450 / 400,
-// });
-
-// new hoverEffect({
-//   parent: document.querySelector(".project-thumbnail1"),
-//   intensity: 0.3,
-//   image1: "/images/p-1.jpg",
-//   image2: "/images/p-11.jpg",
-//   displacementImage: "/images/diss.png",
-//   imagesRatio: 381 / 494,
-// });
-
-// new hoverEffect({
-//   parent: document.querySelector(".project-thumbnail2"),
-//   intensity: 0.3,
-//   image1: "/images/p-2.jpg",
-//   image2: "/images/p-22.jpg",
-//   displacementImage: "/images/diss.png",
-//   imagesRatio: 381 / 494,
-// });
-
-// new hoverEffect({
-//   parent: document.querySelector(".project-thumbnail3"),
-//   intensity: 0.3,
-//   image1: "/images/p-3.jpg",
-//   image2: "/images/p-33.jpg",
-//   displacementImage: "/images/diss.png",
-//   imagesRatio: 381 / 494,
-// });
-
-// new hoverEffect({
-//   parent: document.querySelector(".project-thumbnail4"),
-//   intensity: 0.3,
-//   image1: "/images/p-4.jpg",
-//   image2: "/images/p-44.jpg",
-//   displacementImage: "/images/diss.png",
-//   imagesRatio: 381 / 494,
-// });
+new hoverEffect({
+  parent: document.querySelector(".home-img"),
+  intensity: 0.3,
+  image1: "/images/hero.jpg",
+  image2: "/images/hero-2.jpg",
+  displacementImage: "/images/diss.png",
+  imagesRatio: 450 / 400,
+});
 
 // END HOVER EFFECT
+
+// START SWIPER JS
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+
+  // Navigation Arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
+
+// END SWIPER JS
+
+// START YEAR CHANGER
+
+var year = new Date().getFullYear();
+var date = `&#169 ${year} SAVIOUR`;
+document.querySelector(".year").innerHTML = date;
+
+// END YEAR CHANGER
+
+// START SCROLL UP
+
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+
+  if (this.scrollY >= 200) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
+
+// END SCROLL UP
+
+// START DARK / LIGHT THEME SWITCH
+
+const toggleSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+
+const switchTheme = (e) => {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark"); // set the localStorage items
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light"); // set the localStorage items
+  }
+};
+
+// get the localStorage items using the ternary operator
+const currentTheme = localStorage.getItem("theme")
+  ? localStorage.getItem("theme")
+  : null;
+
+if (currentTheme) {
+  // now blend the current data-theme with the currentTheme from localStorage
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  // this is for the checkbox toggle so it remains
+  // if dark theme is activated, toggle switch should remain checked else return to default
+  if (currentTheme === "dark") {
+    toggleSwitch.checked = true;
+  }
+}
+
+toggleSwitch.addEventListener("change", switchTheme);
+
+// END DARK / LIGHT THEME SWITCH
+
+// START SCROLL REVEAL
+
+const sr = ScrollReveal({
+  distance: "30px",
+  duration: 1800,
+  reset: true,
+});
+
+sr.reveal(
+  `.home-data, .home-image, .showreel-media, .testimonial-bg, .ig-box, .footer-logo, .footer-right, .footer-left`,
+  {
+    origin: "top",
+    interval: 200,
+  }
+);
+
+sr.reveal(`.p-1, .p-3`, {
+  origin: "left",
+});
+
+sr.reveal(`.p-2, .p-4`, {
+  origin: "right",
+});
+
+// END SCROLL REVEAL

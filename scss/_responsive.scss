@@ -1,0 +1,483 @@
+// START EXTRA LARGE QUERY
+
+@include media-xlg {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-title {
+    font-size: 4rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .home-container {
+    margin-top: -2rem !important;
+  }
+
+  .nav-menu {
+    padding-left: 13rem !important;
+  }
+
+  .home-title {
+    font-size: 4rem !important;
+    line-height: 5.2rem !important;
+
+    span {
+      img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+  }
+
+  .home-description {
+    font-size: 1.2rem !important;
+  }
+
+  .home-data {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+
+  .home-image {
+    flex-basis: 40%;
+    max-width: 40%;
+    height: 450px !important;
+  }
+
+  .home-img {
+    height: 450px;
+  }
+}
+
+// END EXTRA LARGE QUERY
+
+// START LARGE QUERY
+
+@include media-lg {
+  .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .header {
+    top: 2rem !important;
+  }
+
+  .nav-menu {
+    //  this displays the overlay
+    width: 55% !important;
+  }
+
+  .nav-open,
+  .nav-close {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .home {
+    padding-top: 11rem !important;
+  }
+
+  .home-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-title {
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
+
+  .home-data p {
+    margin-top: 1.3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .web-content {
+    padding: 0 80px !important;
+  }
+
+  .web-content h3 {
+    font-size: 2.5rem !important;
+  }
+
+  .web-content p {
+    font-size: 0.9rem !important;
+    margin-bottom: 60px !important;
+  }
+
+  .prev,
+  .next {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .prev {
+    margin-right: 4.5rem;
+  }
+
+  .prev::after,
+  .next::after {
+    font-size: 1.5rem !important;
+  }
+
+  .quote {
+    font-size: 2.2rem !important;
+    line-height: 3.5rem !important;
+  }
+
+  .person {
+    margin-top: 1.7rem;
+  }
+
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    width: 190px;
+    left: 25px;
+  }
+
+  .copyright {
+    left: 35px !important;
+  }
+}
+
+// EMD LARGE QUERY
+
+// START MEDIUM QUERY
+
+@include media-md {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 7rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .header {
+    top: 1.5rem;
+  }
+
+  .nav-menu {
+    padding-left: 8rem;
+    padding-top: 5rem;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .nav-open,
+  .nav-close {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-link {
+    font-size: 3.5rem;
+    line-height: 80px;
+  }
+
+  .social-link a,
+  .social-link a i {
+    font-size: 1.1rem;
+  }
+
+  .social-link a:hover i {
+    bottom: 5px;
+  }
+
+  .email a {
+    font-size: 1.3rem;
+  }
+
+  .home {
+    padding-top: 10rem !important;
+  }
+
+  .home-container {
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .home-content {
+    flex-basis: 58%;
+    max-width: 58%;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .home-description {
+    line-height: 2rem !important;
+  }
+
+  .home-image {
+    flex-basis: 42%;
+    max-width: 42%;
+    position: relative;
+    width: 359px;
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .home-img {
+    display: block !important;
+    height: 100%;
+    position: relative;
+  }
+
+  .web-content-wrap {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .web-media {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: auto;
+  }
+
+  .web-content {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 40px;
+    margin-top: 0;
+  }
+
+  .web-img {
+    max-height: 550px;
+  }
+
+  .web-thumbnail {
+    height: 100%;
+  }
+
+  .web-list:nth-child(2n) .web-content-wrap {
+    flex-direction: row-reverse;
+  }
+
+  .web-content h3 {
+    font-size: 2.1rem;
+  }
+
+  .testimonial-bg {
+    width: 80% !important;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .likes {
+    width: 90px;
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .footer-right {
+    order: 1;
+    margin-top: -3rem;
+  }
+
+  .footer-left {
+    margin-top: 3rem;
+  }
+
+  .footer-description {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+  .scrollup {
+    padding: 1rem;
+  }
+
+  .scrollup-icon {
+    color: var(--white-color);
+    font-size: 1.7rem;
+  }
+}
+
+// END MEDIUM QUERY
+
+// START SMALL QUERY
+
+@include media-sm {
+  .section {
+    padding: 6.5rem 0 4.5rem;
+
+    &-title {
+      font-size: 2.8rem;
+    }
+  }
+
+  .container {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .theme-container {
+    margin-right: 2rem;
+
+    .theme-switch-wrapper {
+      span {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .nav-menu {
+    padding-left: 6rem;
+
+    .nav-list {
+      .nav-item {
+        .nav-link {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  .home-content {
+    .home-title {
+      font-size: 3.2rem;
+      line-height: 108%;
+    }
+
+    .home-description {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+  }
+
+  .prev,
+  .next {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .prev {
+    margin-right: 3.5rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 600px;
+    height: 600px;
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post {
+    font-size: 0.8rem;
+  }
+
+  form .split {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+// END SMALL QUERY
+
+// START EXTRA SMALL QUERY
+
+@include media-xsm {
+  .nav-menu {
+    padding-left: 1.5rem;
+  }
+
+  .social-link {
+    a {
+      font-size: 0.8rem;
+    }
+  }
+
+  .email {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+// END EXTRA SMALL QUERY

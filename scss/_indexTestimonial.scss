@@ -1,0 +1,108 @@
+.testimonial {
+  background: var(--white-color);
+
+  .testimonial-container {
+    padding: 3rem 1.5rem;
+    margin: auto;
+
+    .testimonial-bg {
+      width: 100%;
+      margin: auto;
+
+      .testimonial-data {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pagination {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 2rem;
+          top: 0;
+          right: 0;
+          z-index: 99;
+
+            .prev,
+            .next {
+              // the important is to override the default styling for swiper JS
+              color: var(--white-color) !important;
+              background-color: var(--dark-color);
+              border-radius: 50%;
+              width: 40px !important;
+              height: 40px !important;
+              line-height: 30px !important;
+              font-size: 1.3rem !important;
+              position: absolute !important;
+              top: 35% !important;
+              transition: all 0.4s ease;
+              left: unset !important;
+              right: 0 !important;
+            }
+
+            .prev {
+              margin-right: 3.5rem;
+            }
+
+            .prev::after,
+            .next::after {
+              font-size: 1rem !important;
+              font-weight: bold;
+            }
+
+            .prev:hover,
+            .next:hover {
+              background: var(--orange-color) !important;
+              color: var(--white-color) !important;
+            }
+
+            .prev {
+              left: unset;
+              right: 0;
+            }
+        }
+      }
+
+      .testimonial-details {
+        figure {
+          cursor: grab;
+
+          .quote {
+            color: var(--text-color);
+            font-weight: 400;
+            line-height: 1.8rem;
+          }
+
+          .person {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1rem;
+
+            .profile-pic {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 1rem;
+            }
+
+            .person-details {
+              .name {
+                display: block;
+                font-weight: 600;
+                color: var(--dark-color);
+              }
+
+              .post {
+                display: block;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
