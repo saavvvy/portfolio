@@ -286,7 +286,7 @@ textarea {
             font-weight: 600;
             text-transform: capitalize;
             color: var(--dark-color);
-            display: block !important; }
+            display: none; }
           .header .nav .toggle-wrap .theme-container .theme-switch-wrapper .theme-switch {
             width: 40px;
             height: 22px;
@@ -990,8 +990,7 @@ textarea {
     margin-right: 2rem; }
     .theme-container .theme-switch-wrapper span {
       display: block;
-      font-size: 1rem;
-      display: none !important; }
+      font-size: 1rem; }
 
   .nav-menu {
     padding-left: 6rem; }
