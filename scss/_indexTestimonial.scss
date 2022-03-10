@@ -24,43 +24,43 @@
           right: 0;
           z-index: 99;
 
-            .prev,
-            .next {
-              // the important is to override the default styling for swiper JS
-              color: var(--white-color) !important;
-              background-color: var(--dark-color);
-              border-radius: 50%;
-              width: 40px !important;
-              height: 40px !important;
-              line-height: 30px !important;
-              font-size: 1.3rem !important;
-              position: absolute !important;
-              top: 35% !important;
-              transition: all 0.4s ease;
-              left: unset !important;
-              right: 0 !important;
-            }
+          .prev,
+          .next {
+            // the important is to override the default styling for swiper JS
+            color: var(--white-color) !important;
+            background-color: var(--dark-color);
+            border-radius: 50%;
+            width: 40px !important;
+            height: 40px !important;
+            line-height: 30px !important;
+            font-size: 1.3rem !important;
+            position: absolute !important;
+            top: 35% !important;
+            transition: all 0.4s ease;
+            left: unset !important;
+            right: 0 !important;
+          }
 
-            .prev {
-              margin-right: 3.5rem;
-            }
+          .prev {
+            margin-right: 3.5rem;
+          }
 
-            .prev::after,
-            .next::after {
-              font-size: 1rem !important;
-              font-weight: bold;
-            }
+          .prev::after,
+          .next::after {
+            font-size: 1rem !important;
+            font-weight: bold;
+          }
 
-            .prev:hover,
-            .next:hover {
-              background: var(--orange-color) !important;
-              color: var(--white-color) !important;
-            }
+          .prev:hover,
+          .next:hover {
+            background: var(--orange-color) !important;
+            color: var(--white-color) !important;
+          }
 
-            .prev {
-              left: unset;
-              right: 0;
-            }
+          .prev {
+            left: unset;
+            right: 0;
+          }
         }
       }
 
