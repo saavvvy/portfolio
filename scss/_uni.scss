@@ -82,7 +82,9 @@ button {
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
-button {
+button,
+.button,
+.primary {
   background: var(--dark-color);
   color: var(--white-color);
   display: inline-block;
@@ -100,7 +102,7 @@ button {
     color: var(--dark-color);
   }
 
-  &.primary {
+  &.primary-1 {
     background: var(--orange-color);
     color: var(--white-color);
 

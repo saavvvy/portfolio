@@ -60,12 +60,12 @@ navOpen.addEventListener("click", () => {
 
 navClose.addEventListener("click", () => {
   tl.reverse();
-    navOpen.style.opacity = 1;
+  navOpen.style.opacity = 1;
 });
 
 overlay.addEventListener("click", () => {
   tl.reverse();
-    navOpen.style.opacity = 1;
+  navOpen.style.opacity = 1;
 });
 
 // the reason for this is so that when you click on any of the nav-links, the animations play and happen in effect before going to it's destination
@@ -190,20 +190,54 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(
-  `.home-data, .home-image, .showreel-media, .testimonial-bg, .ig-box, .footer-logo, .footer-right, .footer-left`,
-  {
-    origin: "top",
-    interval: 200,
-  }
-);
+sr.reveal(`.home-content`, {
+  origin: "top",
+  interval: 200,
+});
 
-sr.reveal(`.p-1, .p-3`, {
+sr.reveal(`.home-image`, {
+  origin: "bottom",
+  interval: 200,
+});
+
+sr.reveal(`.w-1, .w-3`, {
   origin: "left",
 });
 
-sr.reveal(`.p-2, .p-4`, {
+sr.reveal(`.w-2, .w-4`, {
   origin: "right",
+});
+
+sr.reveal(`.g-1, .g-4`, {
+  origin: "left",
+});
+
+sr.reveal(`.g-3, .g-6`, {
+  origin: "right",
+});
+
+sr.reveal(`.g-2`, {
+  origin: "top",
+});
+
+sr.reveal(`.g-5`, {
+  origin: "bottom",
+});
+
+sr.reveal(`.t-1`, {
+  origin: "left",
+});
+
+sr.reveal(`.t-2`, {
+  origin: "right",
+});
+
+sr.reveal(`.footer-right`, {
+  origin: "bottom",
+});
+
+sr.reveal(`.footer-left`, {
+  origin: "top",
 });
 
 // END SCROLL REVEAL

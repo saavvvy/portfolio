@@ -163,9 +163,22 @@
     left: 25px;
   }
 
-  .copyright {
-    left: 35px !important;
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
+
+  .scrollup {
+    padding: 1rem;
+  }
+
+  .scrollup-icon {
+    color: var(--white-color);
+    font-size: 1.8rem !important;
+  }
+
+  // .copyright {
+  //   left: 35px !important;
+  // }
 }
 
 // EMD LARGE QUERY
@@ -317,12 +330,6 @@
     margin-bottom: 1.5rem;
   }
 
-  .likes {
-    width: 90px;
-    padding-top: 0.2rem;
-    font-size: 1.1rem;
-  }
-
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -390,6 +397,10 @@
       }
     }
   }
+
+  // .gallery {
+  //   grid-template-columns: 1fr 1fr !important;
+  // }
 
   .nav-menu {
     padding-left: 6rem;

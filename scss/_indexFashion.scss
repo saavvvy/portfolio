@@ -1,8 +1,9 @@
 #fashion {
+  background: var(--container-color);
+
   .gallery {
     margin-top: 4rem;
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr; // change will occur later
     grid-template-columns: 1fr;
     gap: 1rem;
 
@@ -16,7 +17,7 @@
         @include transition1;
 
         &:hover {
-          transform: scale(1.4);
+          transform: scale(1.2);
         }
       }
     }

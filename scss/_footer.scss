@@ -1,6 +1,5 @@
 .footer {
   background: var(--container-color);
-  margin-top: 2rem;
   padding: 7rem 0;
 
   .footer-container {
@@ -51,7 +50,7 @@
             font-size: 1rem;
             height: 24px;
             font-weight: 600;
-            color: var(--title-color);
+            color: var(--text-color);
             position: relative;
             display: block;
             overflow: hidden;
@@ -109,9 +108,17 @@
       .footer-description {
         color: var(--text-color);
         margin-bottom: 2rem;
-        line-height: 1.5rem;
+        line-height: 2.2rem;
         font-weight: 600;
         max-width: 500px;
+
+        span {
+          img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: -0.3rem;
+          }
+        }
       }
 
       .footer-email {
@@ -121,7 +128,7 @@
 
         a {
           font-size: 1.15rem;
-          color: var(--dark-color);
+          color: var(--text-color);
           font-weight: 700;
           display: inline-flex;
         }
@@ -154,7 +161,7 @@
 
       .copyright {
         display: block;
-        color: var(--dark-color);
+        color: var(--text-color);
         margin-top: 3rem;
         font-weight: 900;
         font-size: 1.1rem;
