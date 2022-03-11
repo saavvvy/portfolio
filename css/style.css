@@ -8,9 +8,7 @@
   --orange-color: #f17300;
   --white-color: #ffffff;
   --dark-color: #000000;
-  --container-color: #fdfdfd;
-  --montserrat-font: "Montserrat", sans-serif;
-  --raleway-font: "Raleway", sans-serif; }
+  --container-color: #fdfdfd; }
 
 [data-theme="dark"] {
   --body-color: #090909;
@@ -460,7 +458,7 @@ textarea {
       width: 100%;
       overflow: hidden; }
       #fashion .gallery a img {
-        height: 25rem;
+        height: 30rem;
         transition: all 0.4s ease-in-out; }
         #fashion .gallery a img:hover {
           transform: scale(1.2); }
