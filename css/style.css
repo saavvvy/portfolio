@@ -821,6 +821,8 @@ textarea {
 
   .gallery {
     grid-template-columns: 1fr 1fr 1fr !important; }
+    .gallery a img {
+      height: 30rem !important; }
 
   .scrollup {
     padding: 1rem; }
