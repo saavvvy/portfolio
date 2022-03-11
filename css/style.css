@@ -458,7 +458,7 @@ textarea {
       width: 100%;
       overflow: hidden; }
       #fashion .gallery a img {
-        height: 20rem;
+        height: 30rem;
         transition: all 0.4s ease-in-out; }
         #fashion .gallery a img:hover {
           transform: scale(1.2); }
