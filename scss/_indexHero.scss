@@ -28,12 +28,10 @@
 
 .homes {
   background: var(--container-color);
-  // padding-block: 8rem;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   .title {
-    // font-weight: 300;
     text-transform: uppercase;
 
     .inline-image {
