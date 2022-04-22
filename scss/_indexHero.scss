@@ -28,7 +28,7 @@
 
 .homes {
   background: var(--container-color);
-  // padding-block: 8rem;
+  padding-block: 8rem;
   position: relative;
 
   .title {
@@ -48,7 +48,7 @@
   }
 
   .main-title {
-    font-size: clamp(2.5rem, 10vw, 10rem);
+    font-size: clamp(2.5rem, 10vw, 8rem);
     text-align: center;
     line-height: 1.4;
   }

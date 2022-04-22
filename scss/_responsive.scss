@@ -271,6 +271,17 @@
     line-height: 2rem !important;
   }
 
+  // important to note
+  .homes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-title {
+      line-height: 1,2;
+    }
+  }
+
   .home-image {
     flex-basis: 42%;
     max-width: 42%;
