@@ -368,7 +368,6 @@ textarea {
 
 .homes {
   background: var(--container-color);
-  padding-block: 8rem;
   position: relative; }
   .homes .title {
     font-weight: 300;
@@ -385,7 +384,7 @@ textarea {
   .homes .main-title {
     font-size: clamp(2.5rem, 10vw, 10rem);
     text-align: center;
-    line-height: 1.2; }
+    line-height: 1.4; }
 
 #web {
   background: var(--container-color); }
