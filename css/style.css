@@ -383,7 +383,7 @@ textarea {
       border-bottom-left-radius: 0;
       margin: 0 1rem; }
   .homes .main-title {
-    font-size: clamp(4rem, 10vw, 10rem);
+    font-size: clamp(3rem, 10vw, 10rem);
     text-align: center;
     line-height: 1.2; }
 
