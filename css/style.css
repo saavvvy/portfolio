@@ -370,7 +370,7 @@ textarea {
 
 .homes {
   background: var(--container-color);
-  padding-block: 8rem;
+  height: 100vh;
   position: relative; }
   .homes .title {
     text-transform: uppercase; }
