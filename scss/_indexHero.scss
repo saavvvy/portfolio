@@ -25,3 +25,31 @@
     display: none;
   }
 }
+
+.homes {
+  background: var(--container-color);
+  padding-block: 8rem;
+  position: relative;
+
+  .title {
+    font-weight: 300;
+    text-transform: uppercase;
+
+    .inline-image {
+      display: inline-block;
+      width: 7rem;
+      height: 7rem;
+      background: url('../images/statue.jpg') top center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      border-bottom-left-radius: 0;
+      margin: 0 1rem;
+    }
+  }
+
+  .main-title {
+    font-size: clamp(5rem, 10vw, 10rem);
+    text-align: center;
+    line-height: 1.2;
+  }
+}
