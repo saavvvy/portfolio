@@ -366,7 +366,8 @@ textarea {
     margin-top: 0.7rem;
     color: var(--text-color); }
   .home .home-img {
-    display: none; }
+    height: 450px;
+    margin-top: 2rem; }
 
 .homes {
   background: var(--container-color);
