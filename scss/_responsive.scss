@@ -326,7 +326,6 @@
 
   .languages {
     width: 100%;
-    display: grid;
   }
 
   .languages-container {
@@ -335,18 +334,10 @@
   }
 
   .languages-box {
+    margin: 10px auto 20px auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-
-    span {
-      color: var(--orange-color);
-      font-weight: 600;
-      font-size: 4rem;
-      line-height: 1.3rem;
-      font-family: "Poppins";
-      user-select: none;
-    }
 
     ul {
       display: flex;
@@ -362,6 +353,19 @@
         margin-top: 4px;
       }
     }
+  }
+
+  .processes {
+    width: 100%;
+    // max-width: 950px;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    margin: 50px auto;
+    padding-bottom: 50px;
+
+    .process-container {}
   }
 
   .web-content-wrap {

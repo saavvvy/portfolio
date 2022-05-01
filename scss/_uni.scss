@@ -116,6 +116,15 @@ button,
   }
 }
 
+  .dot {
+    color: var(--orange-color);
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.3rem;
+    font-family: "Poppins";
+    user-select: none;
+  }
+
 input,
 textarea {
   outline: none;

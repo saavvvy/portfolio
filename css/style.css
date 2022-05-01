@@ -93,6 +93,14 @@ button,
       background: var(--white-color);
       color: var(--orange-color); }
 
+.dot {
+  color: var(--orange-color);
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.3rem;
+  font-family: "Poppins";
+  user-select: none; }
+
 input,
 textarea {
   outline: none;
@@ -951,24 +959,17 @@ textarea {
     position: relative; }
 
   .languages {
-    width: 100%;
-    display: grid; }
+    width: 100%; }
 
   .languages-container {
     display: grid;
     grid-template-columns: 1fr 1fr; }
 
   .languages-box {
+    margin: 10px auto 20px auto;
     width: 100%;
     display: flex;
     flex-direction: column; }
-    .languages-box span {
-      color: var(--orange-color);
-      font-weight: 600;
-      font-size: 4rem;
-      line-height: 1.3rem;
-      font-family: "Poppins";
-      user-select: none; }
     .languages-box ul {
       display: flex;
       background-color: var(--body-color);
@@ -980,6 +981,11 @@ textarea {
         color: var(--text-color);
         margin-right: 20px;
         margin-top: 4px; }
+
+  .processes {
+    width: 100%;
+    margin: 50px auto;
+    padding-bottom: 50px; }
 
   .web-content-wrap {
     width: 100%;
