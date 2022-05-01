@@ -97,7 +97,7 @@ window.addEventListener("scroll", hideLogo);
 // START HOVER EFFECT
 
 new hoverEffect({
-  parent: document.querySelector(".home-img"),
+  parent: document.querySelector(".about-img"),
   intensity: 0.3,
   image1: "/images/hero.jpg",
   image2: "/images/hero-2.jpg",
