@@ -150,7 +150,7 @@ textarea {
       z-index: 9999;
       transform: translateX(-100%); }
       .header .nav .nav-menu .nav-list {
-        margin-top: -2rem; }
+        margin-top: 2rem; }
         .header .nav .nav-menu .nav-list .nav-item {
           position: relative;
           display: block; }
@@ -474,6 +474,10 @@ textarea {
       transition: all 0.4s ease-in-out; }
       #fashion .gallery a img:hover {
         transform: scale(1.2); }
+#fashion .see {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
 
 .testimonial .testimonial-container {
   padding: 3rem 1.5rem;
