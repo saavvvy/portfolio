@@ -721,6 +721,8 @@ textarea {
   line-height: 25px;
   margin-top: 0.7rem;
   color: var(--text-color); }
+.about .about-image {
+  order: 1 !important; }
 .about .about-img {
   height: 450px;
   margin-top: 2rem; }
@@ -813,7 +815,7 @@ textarea {
     height: 450px !important; }
 
   .about-img {
-    height: 450px; } }
+    height: 450px !important; } }
 @media screen and (min-width: 968px) {
   .container {
     margin-left: auto !important;
