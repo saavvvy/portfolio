@@ -721,6 +721,59 @@ textarea {
   height: 450px;
   margin-top: 2rem; }
 
+.languages {
+  width: 100%; }
+
+.languages-container {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.languages-box {
+  margin: 10px auto 20px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .languages-box ul {
+    display: flex;
+    background-color: var(--body-color);
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    margin-top: 10px;
+    flex-wrap: wrap; }
+    .languages-box ul li {
+      color: var(--text-color);
+      margin-right: 20px;
+      margin-top: 4px; }
+
+.processes {
+  margin: 50px 30px; }
+  .processes .process-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+    width: 100%;
+    margin-top: 50px; }
+    .processes .process-container .process-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative; }
+      .processes .process-container .process-box span {
+        color: var(--orange-color);
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        font-weight: 700;
+        font-size: 4rem;
+        z-index: -1; }
+      .processes .process-container .process-box h2 {
+        font-size: 2rem; }
+      .processes .process-container .process-box ul {
+        margin-top: 20px; }
+        .processes .process-container .process-box ul li {
+          font-size: 1.1rem;
+          margin: 4px 0px; }
+
 @media screen and (min-width: 1180px) {
   .container {
     padding-left: 15px;
@@ -796,6 +849,13 @@ textarea {
   .about-data p {
     margin-top: 1.3rem;
     margin-bottom: 3.5rem; }
+
+  .processes .process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 100px;
+    width: 100%;
+    margin-top: 50px; }
 
   .web-content {
     padding: 0 80px !important; }
@@ -904,11 +964,6 @@ textarea {
     column-gap: 3rem;
     align-items: center; }
 
-  .skillset-container {
-    display: flex;
-    column-gap: 3rem;
-    align-items: center; }
-
   .languages-container {
     display: flex;
     column-gap: 3rem;
@@ -917,18 +972,6 @@ textarea {
   .about-content {
     flex-basis: 58%;
     max-width: 58%; }
-
-  .skillset-content {
-    flex-basis: 40%;
-    max-width: 40%; }
-
-  .skillset-description {
-    flex-basis: 60%;
-    max-width: 60%;
-    position: relative;
-    border: 1px solid var(--border-color);
-    padding: 20px;
-    width: 359px; }
 
   .about-title {
     font-size: 2.5rem;
@@ -958,34 +1001,16 @@ textarea {
     height: 100%;
     position: relative; }
 
-  .languages {
-    width: 100%; }
-
   .languages-container {
     display: grid;
     grid-template-columns: 1fr 1fr; }
 
-  .languages-box {
-    margin: 10px auto 20px auto;
+  .processes .process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
     width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .languages-box ul {
-      display: flex;
-      background-color: var(--body-color);
-      padding: 10px 20px;
-      border: 1px solid var(--border-color);
-      margin-top: 10px;
-      flex-wrap: wrap; }
-      .languages-box ul li {
-        color: var(--text-color);
-        margin-right: 20px;
-        margin-top: 4px; }
-
-  .processes {
-    width: 100%;
-    margin: 50px auto;
-    padding-bottom: 50px; }
+    margin-top: 50px; }
 
   .web-content-wrap {
     width: 100%;

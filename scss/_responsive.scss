@@ -106,6 +106,16 @@
     margin-bottom: 3.5rem;
   }
 
+  .processes {
+    .process-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      gap: 100px;
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
   .web-content {
     padding: 0 80px !important;
   }
@@ -257,12 +267,6 @@
     align-items: center;
   }
 
-  .skillset-container {
-    display: flex;
-    column-gap: 3rem;
-    align-items: center;
-  }
-
   .languages-container {
     display: flex;
     column-gap: 3rem;
@@ -272,20 +276,6 @@
   .about-content {
     flex-basis: 58%;
     max-width: 58%;
-  }
-
-  .skillset-content {
-    flex-basis: 40%;
-    max-width: 40%;
-  }
-
-  .skillset-description {
-    flex-basis: 60%;
-    max-width: 60%;
-    position: relative;
-    border: 1px solid var(--border-color);
-    padding: 20px;
-    width: 359px;
   }
 
   .about-title {
@@ -324,48 +314,19 @@
     position: relative;
   }
 
-  .languages {
-    width: 100%;
-  }
-
-  .languages-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .languages-box {
-    margin: 10px auto 20px auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    ul {
-      display: flex;
-      background-color: var(--body-color);
-      padding: 10px 20px;
-      border: 1px solid var(--border-color);
-      margin-top: 10px;
-      flex-wrap: wrap;
-
-      li {
-        color: var(--text-color);
-        margin-right: 20px;
-        margin-top: 4px;
-      }
-    }
-  }
+.languages-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
   .processes {
-    width: 100%;
-    // max-width: 950px;
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
-    margin: 50px auto;
-    padding-bottom: 50px;
-
-    .process-container {}
+    .process-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      width: 100%;
+      margin-top: 50px;
+    }
   }
 
   .web-content-wrap {
