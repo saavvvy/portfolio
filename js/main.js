@@ -187,7 +187,12 @@ toggleSwitch.addEventListener("change", switchTheme);
 const sr = ScrollReveal({
   distance: "30px",
   duration: 1800,
-  reset: true,
+  reset: false,
+});
+
+sr.reveal(`.homes`, {
+  origin: "top",
+  interval: 200,
 });
 
 sr.reveal(`.home-content`, {
@@ -238,6 +243,31 @@ sr.reveal(`.footer-right`, {
 
 sr.reveal(`.footer-left`, {
   origin: "top",
+});
+
+sr.reveal(`.a-1`, {
+  origin: "left",
+  interval: 200,
+});
+
+sr.reveal(`.a-2`, {
+  origin: "right",
+  interval: 200,
+});
+
+sr.reveal(`.languages`, {
+  origin: "top",
+  interval: 200,
+});
+
+sr.reveal(`.processes`, {
+  origin: "bottom",
+  interval: 200,
+});
+
+sr.reveal(`.f-1, .f-2, .f-3, .f-4, .f-5, .f-6`, {
+  origin: "top",
+  interval: 200,
 });
 
 // END SCROLL REVEAL

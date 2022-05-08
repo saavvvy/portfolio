@@ -854,12 +854,14 @@ textarea {
     margin-top: 1.3rem;
     margin-bottom: 3.5rem; }
 
-  .processes .process-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 100px;
-    width: 100%;
-    margin-top: 50px; }
+  .processes {
+    width: 100%; }
+    .processes .process-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      gap: 100px;
+      width: 100%;
+      margin-top: 50px; }
 
   .web-content {
     padding: 0 80px !important; }

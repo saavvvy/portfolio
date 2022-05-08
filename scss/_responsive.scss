@@ -107,6 +107,8 @@
   }
 
   .processes {
+    width: 100%;
+    
     .process-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr !important;
